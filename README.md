@@ -6,7 +6,7 @@ This is a music web service that returns songs based on genre and artist through
 
 1. **GET /** - Returns a welcome message.
 
-2. **GET /songs?genre=pop&artist=adele**
+2. **GET /songs?genre=pop&artist=taylorswift**
    - **Description**: Retrieves songs based on the specified genre and/or artist.
    - **Example Request**: `/songs?genre=pop&artist=taylorswift`
    - **Example Response**:
