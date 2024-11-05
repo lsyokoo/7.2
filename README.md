@@ -30,5 +30,5 @@ This is a music web service that returns songs based on genre and artist through
 If a required parameter is missing or if an endpoint is undefined, the service returns a friendly error message.
 
 ## Deployment
-This service is deployed on Render (add URL here once deployed).
+This service is deployed on Render ([URL:](https://seven-2-music-web-service.onrender.com)).
 
