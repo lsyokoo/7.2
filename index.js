@@ -1,5 +1,6 @@
 // Import the express library and assign it to a variable
 import express from 'express';
+import cors from 'cors'
 
 // Create an instance of an express application 
 const app = express();
@@ -7,6 +8,11 @@ app.use(express.json());
 
 // Set the port the application will be running on
 const port = process.env.PORT || 3001;
+
+//cors
+app.use(cors({
+  origin: '*'
+}));
 
 // Set up a response for the root path of the application
 app.get('/', (req, res) => {
@@ -35,7 +41,7 @@ app.get('/songs/:genre/:artist', (req, res) => {
   res.json({ message: `Songs available in genre: ${genre} by artist: ${artist}` });
 });
 
-// Handle 404 for undefined endpoints
+// Handle
 app.use((req, res) => {
   res.status(404).json({ error: "Endpoint not found. Please check your URL." });
 });
